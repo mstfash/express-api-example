@@ -1,0 +1,45 @@
+{
+  "name": "express-api-example",
+  "version": "1.0.0",
+  "description": "A side project on how to structure an express app with mocked db and cronjob",
+  "main": "index.js",
+  "engines": {
+    "node": "16.13.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "crypto": "^1.0.1",
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-jwt": "^6.0.0",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "loglevel": "^1.6.8",
+    "node-cron": "^3.0.2",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.4",
+    "@faker-js/faker": "^7.6.0",
+    "eslint": "^8.37.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node .",
+    "build": "babel --delete-dir-on-start --out-dir dist --copy-files --ignore \"**/__tests__/**,**/__mocks__/**\" --no-copy-ignored src"
+  },
+  "keywords": [],
+  "author": "Moustafa Ashraf <moustafaashraf01@gmail.com>",
+  "license": "MIT"
+}
